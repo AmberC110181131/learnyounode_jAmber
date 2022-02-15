@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper || Hex</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body{
+        background-color: hsl(206, 33%, 96%);;
+      }
+      nav{
+        background-color: white;
+        display: grid;
+        height: 3rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .nav-center{
+        margin: auto;
+        max-width: 620px;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav-links{
+        display: flex;
+      }
+      ul{
+        list-style-type: none;
+      }
+      li{
+        display: flex;
+      }
+      a{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 0.25rem;
+        margin-right: 1rem;
+        color: hsl(205, 86%, 17%);
+        text-decoration: none;
+      }
+      h2,h4{
+        letter-spacing: 0.25rem;
+        text-transform: capitalize;
+        font-family: 'Roboto', sans-serif;
+      }
+      h4{
+        margin-top: 0;
+        color:hsl(205, 78%, 60%);
+        line-height: 1rem;
+        font-size: 1rem;
+      }
+      h2{
+        background-color: #222;
+        color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2.5rem;
+        line-height: 1;
+        font-size: 2.5rem;
+        display: block;
+        margin-block-start: 0.83em;
+        margin-inline-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      main{
+        min-height: calc(100vh - 3rem);
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      }
+      .container{
+        text-align: center;
+      }
+      .color{
+        color:hsl(205, 78%, 60%);
+      }
+      .btn-hero{
+        font-size: 1rem;
+        padding: 0.75rem 1.25rem;
+      }
+      .btn{
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        background: transparent;
+        color: #222;
+        letter-spacing: 0.25rem;
+        display: inline-block;
+        font-weight: 700;
+        transition:  all 0.3s linear;
+        border: 2px solid #222;
+        cursor: pointer;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+        border-radius: 0.5rem;
+      }
+      .btn:hover{
+        color: white;
+        background: black;
+      }
+      button{
+        appearance: auto;
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        word-spacing: normal;
+        line-height: normal;
+        text-indent: 0px;
+        text-shadow: none;
+        text-align: center;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h4>color flipper</h4>
+        <ul class="nav-links">
+          <li><a href="index.html">simple</a></li>
+          <li><a href="hex.html">hex</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>background color : <span id="color">#f1f5f8</span></h2>
+        <button class="btn btn-hero" id="btn" onclick="changeColor()">click me</button>
+      </div>
+    </main>
+    <!-- javascript -->
+    <script src="hex.js"></script>
+  </body>
+</html>
