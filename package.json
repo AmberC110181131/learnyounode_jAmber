@@ -1,0 +1,24 @@
+{
+  "name": "learnyounode_jamber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmberC110181131/learnyounode_jAmber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmberC110181131/learnyounode_jAmber/issues"
+  },
+  "homepage": "https://github.com/AmberC110181131/learnyounode_jAmber#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {}
+}
