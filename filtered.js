@@ -11,6 +11,7 @@ fs.readdir(folder, function (err, files) {
   files.forEach(function (file) {
     if (path.extname(file) === ext) {
       console.log(file);
+    
     }
   });
 });
